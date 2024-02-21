@@ -80,7 +80,7 @@ while itemNum<=itemSum :
         "SSL":[shopSsl]}
     miniDf=pd.DataFrame(newData)
     df=pd.concat([df,miniDf],ignore_index=True)
-    #for文末尾で店の数を更新。ここで51になればfor文を抜けて、while文が終了して、返り値resultを返す。
+    #for文末尾で店の数を更新。ここで51になればfor文を抜けて、while文が終了。
     itemNum+=1
     if itemNum>itemSum:
       break
